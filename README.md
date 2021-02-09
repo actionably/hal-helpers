@@ -1,0 +1,1 @@
+This is a shared library for adding links, resources and url's to server responses in the hal pattern
