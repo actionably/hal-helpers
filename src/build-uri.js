@@ -1,6 +1,8 @@
-const querystring = require('querystring')
+const querystring = require("querystring");
 
-module.exports = (protocol, host, path, params)=> {
-    const qs = params ? `?${querystring.stringify(params)}` : "";
-    return `${protocol}://${host}${path}${qs}`;
-}
+module.exports = (req, path, params) => {
+  const host = req.host;
+  path = path || req.path;
+  const qs = params ? `?${querystring.stringify(params)}` : "";
+  return `${req.protocol}://${host}${path}${qs}`;
+};
