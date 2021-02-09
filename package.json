@@ -1,6 +1,6 @@
 {
   "name": "hal-helpers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shared hal helper library for generic use",
   "main": "src/index.js",
   "scripts": {
