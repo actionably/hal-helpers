@@ -1,9 +1,9 @@
 const buildUri = require("./build-uri");
 
-module.exports = (req, path, params) => {
+module.exports = (protocol, host, path, params) => {
   return {
     self: {
-      href: buildUri(req, path, params),
+      href: buildUri(protocol, host, path, params),
     },
   };
 };
